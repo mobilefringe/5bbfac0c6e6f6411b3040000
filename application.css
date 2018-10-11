@@ -328,8 +328,10 @@ ul.options-list li.highlighted {
     z-index: 9;
 }
 .property_logo {
-    margin: 32px auto;
-    max-width: 282px;
+    // margin: 32px auto;
+    margin: 22px auto;
+    // max-width: 282px;
+    max-width: 252px;
     img {
         max-width: 100%;
     }
