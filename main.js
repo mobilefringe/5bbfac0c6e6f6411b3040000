@@ -192,7 +192,7 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                     },
                     {
                         name: "Twitter",
-                        url: "https://twitter.com",
+                        url: "https://twitter.com/solandmall",
                         iconClass: "fa fa-twitter twitter"
                     },
                     {
