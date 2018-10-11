@@ -186,9 +186,9 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                 ],
                 social_media: [
                     {
-                        name: "Instagram",
-                        url: "https://www.youtube.com/user/southlandmallmiami",
-                        iconClass: "fa fa-youtube youtube"
+                        name: "Facebook",
+                        url: "https://www.facebook.com/southlandmallmiami",
+                        iconClass: "fa fa-facebook-square facebook"
                     },
                     {
                         name: "Twitter",
@@ -196,10 +196,16 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                         iconClass: "fa fa-twitter twitter"
                     },
                     {
-                        name: "Facebook",
-                        url: "https://www.facebook.com/southlandmallmiami",
-                        iconClass: "fa fa-facebook-square facebook"
-                    }
+                        name: "YouTube",
+                        url: "https://www.youtube.com/user/southlandmallmiami",
+                        iconClass: "fa fa-youtube youtube"
+                    },
+                    {
+                        name: "Google+",
+                        url: "https://plus.google.com/+Mysouthlandmall",
+                        iconClass: "fab fa-google-plus google"
+                    },
+                    
                 ],
                 search_result : null,
                 suggestionAttribute: 'name'
