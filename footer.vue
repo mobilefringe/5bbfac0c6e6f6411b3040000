@@ -4,7 +4,7 @@
 		    <div class="footer_logo">
 	            <div class="property_logo">
 			        <router-link to="/">
-			            <img src="//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/png/1539292460000/southland-mall-logo2-02-compressor.png" alt="Property Logo"/>
+			            <img src="//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/png/1539292470000/southland-mall-logo2-01-compressor.png" alt="Property Logo"/>
 		            </router-link>
 		        </div>    
 		        <div class="center-block">
