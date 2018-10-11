@@ -187,8 +187,8 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                 social_media: [
                     {
                         name: "Instagram",
-                        url: "https://www.instagram.com",
-                        iconClass: "fa fa-instagram instagram"
+                        url: "https://www.youtube.com/user/southlandmallmiami",
+                        iconClass: "fa fa-youtube youtube"
                     },
                     {
                         name: "Twitter",
