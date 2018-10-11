@@ -2219,7 +2219,7 @@ footer {
         height: auto;
     }
     .main_content_container {
-        margin-top: 90px;
+        margin-top: 110px;
     }
     /* *** HEADER *** */
     .header_logo {
@@ -2283,7 +2283,7 @@ footer {
     }
     #mobile_nav {
         width: 100vw;
-        height: calc(100vh - 90px);
+        height: calc(100vh - 110px);
         position: absolute;
         top: -1px;
         left: 0;
