@@ -203,7 +203,7 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                     {
                         name: "Google+",
                         url: "https://plus.google.com/+Mysouthlandmall",
-                        iconClass: "fab fa-google-plus google"
+                        iconClass: "fa fa-google-plus google"
                     },
                     
                 ],
