@@ -1122,7 +1122,7 @@ footer {
     }
 }
 .hours_container.todays_hours {
-    background: $primary;   
+    background: #v;   
     color: #FFF;
 }
 .holiday_hours {
