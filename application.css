@@ -1418,6 +1418,9 @@ footer {
         width: 100px;
     }    
 }
+.mall_info_images{
+    padding: 20px;
+}
 /* *** PROMOTIONS *** */
 .list-item {
     display: inline-block;
