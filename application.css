@@ -560,7 +560,7 @@ footer {
     .social_icons .fa {
         color: #fff;
         &:hover {
-            color: $accent !important;
+            color: #ddcfb5 !important;
         }
     }
     .footer_terms {
