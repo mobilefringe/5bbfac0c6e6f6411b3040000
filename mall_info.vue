@@ -23,15 +23,15 @@
         				<v-select :options="dropDownSelect" :searchable="false" :on-change="selectPage" class="category-select" placeholder="Select a Page" inputId="pageSelect"></v-select>
         			</div>
         			<div class="row">
-        			    <div class="col-md-6 col-lg-4">
+        			    <div class="col-md-12 col-lg-12">
         			        <div v-if="pageContent">
         			            <div v-if="locale=='en-ca'" v-html="pageContent.body"></div>
         			            <div v-else v-html="pageContent.body_2"></div>
         			        </div>
         			    </div>
-        			   <div class="col-md-6 col-lg-8">
-        			       <img class="max_width" src="http://placehold.it/1522x1196" alt="" />
-        			   </div>
+        			   <!--<div class="col-md-6 col-lg-8">-->
+        			   <!--    <img class="max_width" src="http://placehold.it/1522x1196" alt="" />-->
+        			   <!--</div>-->
         		    </div>
         		    <div class="row">
         			    <div class="col-md-6">
