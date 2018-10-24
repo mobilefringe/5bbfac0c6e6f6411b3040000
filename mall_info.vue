@@ -34,10 +34,10 @@
         			   </div>
         		    </div>
         		    <div class="row">
-        			    <div class="col-md-6 col-lg-4">
+        			    <div class="col-md-6">
         			        <img class="max_width" src="//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/jpeg/1540398641000/pages1.jpg" alt="" />
         			    </div>
-        			   <div class="col-md-6 col-lg-8">
+        			   <div class="col-md-6">
         			       <img class="max_width" src="//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/jpeg/1540398677000/pages2.jpg" alt="" />
         			   </div>
         		    </div>
