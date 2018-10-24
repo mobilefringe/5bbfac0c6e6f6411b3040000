@@ -23,13 +23,13 @@
         				<v-select :options="dropDownSelect" :searchable="false" :on-change="selectPage" class="category-select" placeholder="Select a Page" inputId="pageSelect"></v-select>
         			</div>
         			<div class="row">
-        			    <div :class="{'col-sm-12': !leasingSubpage && leasingContent, 'col-sm-6': leasingSubpage && leasingContent}">
+        			    <div :class="{'col-sm-12': !leasingSubpage && leasingContent.isActive, 'col-sm-6': leasingSubpage && leasingContent.isActive}">
         			        <div v-if="pageContent">
         			            <div v-if="locale=='en-ca'" v-html="pageContent.body"></div>
         			            <div v-else v-html="pageContent.body_2"></div>
         			        </div>
         			    </div>
-        			   <div class="col-sm-6" v-if="leasingSubpage && leasingContent">
+        			   <div class="col-sm-6" v-if="leasingSubpage && leasingContent.isActive">
         			       <div v-if="leasingSubpage">
         			            <div v-if="locale=='en-ca'" v-html="leasingSubpage.body"></div>
         			            <div v-else v-html="leasingSubpage.body_2"></div>
