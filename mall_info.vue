@@ -78,6 +78,7 @@
                     }
 
                     this.leasingContent = response[1].data;
+                    this.leasingSubpage = response[1].data.subpages[0];
                     this.leasingContent.isActive = true;
                     this.marketingContent = response[2].data;
                     this.areaContent = response[3].data;
