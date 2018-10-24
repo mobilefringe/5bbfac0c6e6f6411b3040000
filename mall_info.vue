@@ -57,6 +57,7 @@
                     dataLoaded: false,
                     pageBanner: null,
                     pageContent: null,
+                    leasingSubpage: null
                 }
             },
             watch: {
