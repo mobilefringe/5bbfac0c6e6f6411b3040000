@@ -35,7 +35,7 @@
         			        <div class="" v-html="pageBody.body"></div>
         			    </div>
         			   <div class="col-md-4">
-        			       <img class="max_width" src="http://placehold.it/744x980/bada55" alt="" />
+        			       <img class="max_width" :src="pageImage" alt="" />
         			   </div>
         		    </div>
                 </div>
