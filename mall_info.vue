@@ -23,7 +23,7 @@
         				<v-select :options="dropDownSelect" :searchable="false" :on-change="selectPage" class="category-select" placeholder="Select a Page" inputId="pageSelect"></v-select>
         			</div>
         			<div class="row">
-        			    <div :class="{'col-sm-12': !leasingSubpage && leasingContent, 'col-sm-6': leasingSubpage}">
+        			    <div :class="{'col-sm-12': !leasingSubpage && leasingContent, 'col-sm-6': leasingSubpage && leasingContent}">
         			        <div v-if="pageContent">
         			            <div v-if="locale=='en-ca'" v-html="pageContent.body"></div>
         			            <div v-else v-html="pageContent.body_2"></div>
