@@ -30,7 +30,7 @@
         			        </div>
         			    </div>
         			   <div class="col-md-6 col-lg-8" v-if="leasingSubpage">
-        			       <div v-if="pageContent">
+        			       <div v-if="leasingSubpage">
         			            <div v-if="locale=='en-ca'" v-html="leasingSubpage.body"></div>
         			            <div v-else v-html="leasingSubpage.body_2"></div>
         			        </div>
