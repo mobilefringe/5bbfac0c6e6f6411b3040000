@@ -48,11 +48,11 @@
         		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > <!-- class="hidden_phone" -->
                         <div v-masonry-tile class="item">
                             <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
-                        	    <div v-if="feature.name && feature.description" class="feature_item_container">
+                        	    <div v-if="feature.name" class="feature_item_container">
                         			<img :src="feature.image_url" alt="">
                         			<div class="feature_item_info" >
                         				<div class="feature_item_content">
-                        					<p>{{ feature.name }}</p>
+                        					<p v-if="feature.description">{{ feature.name }}</p>
                         					<h3>{{ feature.description }}</h3>
                         					<a class="feature_item_link" :href="feature.url">
                         					    <div class="feature_item_more animated_btn" :aria-label="feature.name">View Details</div>
