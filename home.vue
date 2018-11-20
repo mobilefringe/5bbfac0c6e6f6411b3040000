@@ -48,7 +48,7 @@
         		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > <!-- class="hidden_phone" -->
                         <div v-masonry-tile class="item">
                             <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">
-                        	    <div class="feature_item_container">
+                        	    <div v-if="feature.name" class="feature_item_container">
                         			<img :src="feature.image_url" alt="">
                         			<div class="feature_item_info" >
                         				<div class="feature_item_content">
