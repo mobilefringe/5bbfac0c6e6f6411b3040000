@@ -11,7 +11,7 @@
         			</div>
         		</div>
         		<div class="site_container page_content">
-        		    <transition-group name="list" tag="div">
+        		    <!--<transition-group name="list" tag="div">-->
         		        <div v-if="events.length == 0">
                             <div class="row">
                                 <div class="col-md-12">
@@ -41,7 +41,7 @@
          <!--                       </div>-->
          <!--                   </div>-->
          <!--               </div>-->
-    				</transition-group>
+    				<!--</transition-group>-->
         			<div class="row" v-if="events.length > 0">
                         <div class="col-md-12">
                             <button class="animated_btn promo_load_more" v-if="!noMoreEvents" @click="handleButton">Load More</button>
