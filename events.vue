@@ -35,13 +35,13 @@
                             <p v-if="noEvents">{{$t("events_page.no_more_event_message")}}</p>
                         </div>
                     </div>
-                    	<div v-else>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p>{{$t("events_page.no_event_message")}}</p>    
-                                </div>
+                	<div v-else>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>{{$t("events_page.no_event_message")}}</p>    
                             </div>
                         </div>
+                    </div>
         		</div>
 	        </div>
 	    </transition>
