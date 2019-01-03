@@ -12,7 +12,7 @@
         		</div>
         		<div class="site_container page_content">
         		    <transition-group name="list" tag="div">
-    					<div class="promo_container" v-if="promos" v-for="promo in promos" :key="promo.id">
+    					<div class="promo_container" v-if="promos.length > 0" v-for="promo in promos" :key="promo.id">
     					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="promo.image_url"></div>
     					    <div class="promo_img" v-else v-lazy:background-image="promo.promo_image2_url_abs"></div>
     					    <div class="promo_content">
@@ -33,7 +33,7 @@
                             </div>
                         </div>
     				</transition-group>
-        			<div class="row">
+        			<div class="row" >
                         <div class="col-md-12">
                             <button class="animated_btn promo_load_more" v-if="!noMorePromos" @click="handleButton">Load More</button>
                             <p v-if="noPromos">{{$t("promos_page.no_more_promo_message")}}</p>
