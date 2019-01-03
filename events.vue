@@ -27,7 +27,7 @@
     						    </router-link>
     					    </div>
     					</div>
-    					<div v-else>
+    					<div v-else class="blah">
                             <div class="row">
                                 <div class="col-md-12">
                                     <p>{{$t("events_page.no_event_message")}}</p>    
