@@ -34,12 +34,12 @@
                         </div>
                     </div>
                     <div v-else>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p>{{$t("promos_page.no_promo_message")}}</p>    
-                                </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>{{$t("promos_page.no_promo_message")}}</p>    
                             </div>
                         </div>
+                    </div>
         		</div>
 	        </div>
 	    </transition>
