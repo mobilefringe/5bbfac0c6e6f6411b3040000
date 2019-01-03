@@ -30,7 +30,7 @@
     					<div v-else>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>{{$t("events_page.no_promo_message")}}</p>    
+                                    <p>{{$t("events_page.no_event_message")}}</p>    
                                 </div>
                             </div>
                         </div>
