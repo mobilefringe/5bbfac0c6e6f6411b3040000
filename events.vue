@@ -35,7 +35,7 @@
                             </div>
                         </div>
     				</transition-group>
-        			<div class="row" v-if="events">
+        			<div class="row" v-if="events.length > 0">
                         <div class="col-md-12">
                             <button class="animated_btn promo_load_more" v-if="!noMoreEvents" @click="handleButton">Load More</button>
                             <p v-if="noEvents">{{$t("events_page.no_more_event_message")}}</p>
