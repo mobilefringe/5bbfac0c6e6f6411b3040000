@@ -25,13 +25,7 @@
     						    </router-link>
     					    </div>
     					</div>
-    					<div v-else>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p>{{$t("promos_page.no_promo_message")}}</p>    
-                                </div>
-                            </div>
-                        </div>
+    					
     				</transition-group>
         			<div class="row" v-if="promos.length > 0">
                         <div class="col-md-12">
@@ -39,6 +33,13 @@
                             <p v-if="noPromos">{{$t("promos_page.no_more_promo_message")}}</p>
                         </div>
                     </div>
+                    <div v-else>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>{{$t("promos_page.no_promo_message")}}</p>    
+                                </div>
+                            </div>
+                        </div>
         		</div>
 	        </div>
 	    </transition>
