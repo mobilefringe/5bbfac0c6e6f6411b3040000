@@ -12,14 +12,7 @@
         		</div>
         		<div class="site_container page_content">
         		    <!--<transition-group name="list" tag="div">-->
-        		        <div v-if="events.length == 0">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p>{{$t("events_page.no_event_message")}}</p>    
-                                </div>
-                            </div>
-                        </div>
-    					<div class="promo_container" v-else v-for="promo in events" :key="promo.id">
+    					<div class="promo_container" v-if="events.length > 0" v-for="promo in events" :key="promo.id">
     					    <div class="promo_img" v-if="locale=='en-ca'" v-lazy:background-image="promo.image_url"></div>
     					    <div class="promo_img" v-else v-lazy:background-image="promo.promo_image2_url_abs"></div>
     					    <div class="promo_content">
@@ -34,13 +27,13 @@
     						    </router-link>
     					    </div>
     					</div>
-    					<!--<div v-else>-->
-         <!--                   <div class="row">-->
-         <!--                       <div class="col-md-12">-->
-         <!--                           <p>{{$t("events_page.no_event_message")}}</p>    -->
-         <!--                       </div>-->
-         <!--                   </div>-->
-         <!--               </div>-->
+    					<div v-else>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>{{$t("events_page.no_event_message")}}</p>    
+                                </div>
+                            </div>
+                        </div>
     				<!--</transition-group>-->
         			<div class="row" v-if="events.length > 0">
                         <div class="col-md-12">
