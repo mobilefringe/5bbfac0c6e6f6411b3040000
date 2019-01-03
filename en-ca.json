@@ -120,16 +120,6 @@
         "no_promo_message" : "There are no Promotions at this time. Please check back soon.",
         "back_to_promos" : "Back to Promotions"
     },
-    "events_page": {
-        "promos_header_desc" : "Find The Best Deals at ",
-        "promos_header" : "Promotions",
-        "promotions_title" : "Upcoming Promotions",
-        "promotions" : "Promotion",
-        "read_more" : "View Details",
-        "no_more_promo_message" : "No More Promotions",
-        "no_promo_message" : "There are no Promotions at this time. Please check back soon.",
-        "back_to_promos" : "Back to Promotions"
-    },
     "stores_page" : {
         "directory" : "Shop", 
         "play" : "Play",
