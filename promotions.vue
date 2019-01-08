@@ -95,8 +95,8 @@
                         var today = moment.tz(this.timezone).format();
                         var showOnWebDate = moment.tz(value.show_on_web_date, this.timezone).format();
                         if (today >= showOnWebDate) {
-                            value.name_short = _.truncate(value.name, { 'length': 21, 'separator': ' ' });
-                            value.name_short_2 = _.truncate(value.name_2, { 'length': 21, 'separator': ' ' });
+                            value.name_short = _.truncate(value.name, { 'length': 30, 'separator': ' ' });
+                            value.name_short_2 = _.truncate(value.name_2, { 'length': 30, 'separator': ' ' });
                             value.description_short = _.truncate(value.description, { 'length': 60, 'separator': ' ' });
                             value.description_short_2 = _.truncate(value.description_2, { 'length': 60, 'separator': ' ' });
     
