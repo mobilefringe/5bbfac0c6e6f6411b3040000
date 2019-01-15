@@ -190,6 +190,7 @@
                     'timezone',
                     'getPropertyHours',
                     'getPropertyHolidayHours',
+                    'getTodayHours',
                     'processedStores',
                     'processedEvents',
                     'processedPromos',
