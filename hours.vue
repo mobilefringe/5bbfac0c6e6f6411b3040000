@@ -113,7 +113,7 @@
                     this.dataLoaded = true;
                 });
                 
-                console.log("todays_hours", todays_hours)
+                console.log("todays_hours", this.todays_hours)
             },
             watch : {
                 locale: function(val, oldVal) {
