@@ -18,10 +18,10 @@
                     </div>
                     <div class="row hours_row">
                         <div class="col-sm-12 col-lg-3">
-                            <div class="hours_container todays_hours">
-                                <p v-if="todays_hours && todays_hours.is_open" class="caps center">Open Now</p>
-                                <p v-if="todays_hours && todays_hours.is_open" class="center">
-                                    {{todays_hours.open_time | moment("h:mm a", timezone)}} - {{todays_hours.close_time | moment("h:mm a", timezone)}}    
+                            <div class="hours_container todaysHours">
+                                <p v-if="todaysHours && todaysHours.is_open" class="caps center">Open Now</p>
+                                <p v-if="todaysHours && todaysHours.is_open" class="center">
+                                    {{todaysHours.open_time | moment("h:mm a", timezone)}} - {{todaysHours.close_time | moment("h:mm a", timezone)}}    
                                 </p>
                                 <p v-else class="center">Closed</p>
                             </div>
@@ -105,13 +105,11 @@
                     
                     this.dataLoaded = true;
                 });
-                
-                console.log("todays_hours", this.todays_hours)
             },
             watch : {
                 locale: function(val, oldVal) {
                     console.log("locale", this.locale);
-                },
+                }
             },
             computed: {
                 ...Vuex.mapGetters([
@@ -135,50 +133,9 @@
                 holidayHours () {
                     return _.sortBy(this.getPropertyHolidayHours, function(o) { return o.holiday_date });
                 },
-                todays_hours() {
-                    console.log("this.getTodaysHours", this.getTodayHours)
-                    return this.getTodayHours
+                todaysHours() {
+                    return this.getTodayHours;
                 }
-                // todaysHours() {
-                //     var timezone = this.timezone
-                //     var regHours = this.getPropertyHours;
-                //     var holHours = this.getPropertyHolidayHours;
-                //     var hours = [];
-                //     // First check if there is a holiday today
-                //     _.forEach(holHours, function(value) {
-                //         var today = moment().format("YYYY-MM-DD");
-                //         var holiday_date = moment(value.holiday_date).tz(timezone).format("YYYY-MM-DD");
-                //         if (today == holiday_date) {
-                //             if (value.is_closed) {
-                //                 value.is_open = false;
-                //             } else {
-                //                 value.is_open = true;
-                //             }
-                //             hours.push(value);
-                //         }
-                //     });
-                //     // If there is no holiday today, check for today's hours
-                //     if (hours.length > 0) {
-                //         return hours;
-                //     } else {
-                //         _.forEach(regHours, function(value) {  
-                //             var today = moment().day();
-                //             if ( today == value.day_of_week ) {
-                //                 var time = moment().tz(timezone).format('HH:mm');
-                //                 var opens = moment(value.open_time).tz(timezone).format('HH:mm');
-                //                 var closes = moment(value.close_time).tz(timezone).format('HH:mm');
-                //                 if (time > opens && time < closes) {
-                //                     value.is_open = true;
-                //                 } else {
-                //                     value.is_open = false;
-                //                 }
-                //                 hours.push(value);
-                //             }         
-                //         });
-                //         return hours;
-                //     }
-                // },
-                
             },
             methods : {
                 loadData: async function() {
