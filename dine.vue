@@ -22,11 +22,13 @@
         					</search-component>
         					<i id="search_icon" class="fa fa-search"></i>
         				</div>
-        				<div class="stores_button_container map_link">
-        				    <router-link to="/map">
+        				<router-link to="/map">
+        				    <div class="stores_button_container map_link">
+        				    
         				        {{ $t("stores_page.view_map") }}
-        				    </router-link>
-        				</div>
+        				    
+        				    </div>
+        				</router-link>
         			</div>
         			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item" horizontal-order="true">
                         <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
