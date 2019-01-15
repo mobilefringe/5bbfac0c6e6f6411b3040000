@@ -18,7 +18,7 @@
                     </div>
                     <div class="row hours_row">
                         <div class="col-sm-12 col-lg-3">
-                            <div class="hours_container todaysHours">
+                            <div class="hours_container todays_hours">
                                 <p v-if="todaysHours && todaysHours.is_open" class="caps center">Open Now</p>
                                 <p v-if="todaysHours && todaysHours.is_open" class="center">
                                     {{todaysHours.open_time | moment("h:mm a", timezone)}} - {{todaysHours.close_time | moment("h:mm a", timezone)}}    
