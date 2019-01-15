@@ -12,7 +12,7 @@
                         </span>
                     </div>
                     <div class="header_hours">
-                        <p v-if="hour.is_open" v-for="hour in todaysHours">Open Now: {{hour.open_time | moment("h a", timezone)}} - {{hour.close_time | moment("h a", timezone)}}</p>
+                        <p v-if="todaysHours && todaysHours.is_open">Open Now: {{todaysHours.open_time | moment("h a", timezone)}} - {{todaysHours.close_time | moment("h a", timezone)}}</p>
                         <p v-else>Closed</p>
                     </div>
 				</div>
