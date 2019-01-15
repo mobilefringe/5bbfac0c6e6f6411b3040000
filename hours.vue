@@ -51,13 +51,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-12 margin_30 text-center" >
-                            <!--<img src="//codecloud.cdn.speedyrails.net/sites/5bbfac0c6e6f6411b3040000/image/gif/1543509132118/HOLIDAY HOURS - SLM POSTER.gif" class="" alt="">-->
-                           
-                            
-                        </div>
-                    </div>
                     <div v-if="holidayHours" class="row">
                         <div class="col-sm-12">
                             <h4 class="margin_30 bold">Holiday Hours</h4>
