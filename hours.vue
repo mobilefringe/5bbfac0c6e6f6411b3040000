@@ -141,6 +141,7 @@
                     return _.sortBy(this.getPropertyHolidayHours, function(o) { return o.holiday_date });
                 },
                 todays_hours() {
+                    console.log("this.getTodaysHours", this.getTodaysHours)
                     return this.getTodaysHours
                 }
                 // todaysHours() {
