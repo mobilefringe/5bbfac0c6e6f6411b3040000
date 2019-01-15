@@ -124,6 +124,7 @@
                     'timezone',
                     'getPropertyHours',
                     'getPropertyHolidayHours',
+                    'getTodaysHours',
                     'findRepoByName'
                 ]),
                 weekdayHours() {
@@ -139,45 +140,48 @@
                 holidayHours () {
                     return _.sortBy(this.getPropertyHolidayHours, function(o) { return o.holiday_date });
                 },
-                todaysHours() {
-                    var timezone = this.timezone
-                    var regHours = this.getPropertyHours;
-                    var holHours = this.getPropertyHolidayHours;
-                    var hours = [];
-                    // First check if there is a holiday today
-                    _.forEach(holHours, function(value) {
-                        var today = moment().format("YYYY-MM-DD");
-                        var holiday_date = moment(value.holiday_date).tz(timezone).format("YYYY-MM-DD");
-                        if (today == holiday_date) {
-                            if (value.is_closed) {
-                                value.is_open = false;
-                            } else {
-                                value.is_open = true;
-                            }
-                            hours.push(value);
-                        }
-                    });
-                    // If there is no holiday today, check for today's hours
-                    if (hours.length > 0) {
-                        return hours;
-                    } else {
-                        _.forEach(regHours, function(value) {  
-                            var today = moment().day();
-                            if ( today == value.day_of_week ) {
-                                var time = moment().tz(timezone).format('HH:mm');
-                                var opens = moment(value.open_time).tz(timezone).format('HH:mm');
-                                var closes = moment(value.close_time).tz(timezone).format('HH:mm');
-                                if (time > opens && time < closes) {
-                                    value.is_open = true;
-                                } else {
-                                    value.is_open = false;
-                                }
-                                hours.push(value);
-                            }         
-                        });
-                        return hours;
-                    }
-                },
+                todays_hours() {
+                    return this.getTodaysHours
+                }
+                // todaysHours() {
+                //     var timezone = this.timezone
+                //     var regHours = this.getPropertyHours;
+                //     var holHours = this.getPropertyHolidayHours;
+                //     var hours = [];
+                //     // First check if there is a holiday today
+                //     _.forEach(holHours, function(value) {
+                //         var today = moment().format("YYYY-MM-DD");
+                //         var holiday_date = moment(value.holiday_date).tz(timezone).format("YYYY-MM-DD");
+                //         if (today == holiday_date) {
+                //             if (value.is_closed) {
+                //                 value.is_open = false;
+                //             } else {
+                //                 value.is_open = true;
+                //             }
+                //             hours.push(value);
+                //         }
+                //     });
+                //     // If there is no holiday today, check for today's hours
+                //     if (hours.length > 0) {
+                //         return hours;
+                //     } else {
+                //         _.forEach(regHours, function(value) {  
+                //             var today = moment().day();
+                //             if ( today == value.day_of_week ) {
+                //                 var time = moment().tz(timezone).format('HH:mm');
+                //                 var opens = moment(value.open_time).tz(timezone).format('HH:mm');
+                //                 var closes = moment(value.close_time).tz(timezone).format('HH:mm');
+                //                 if (time > opens && time < closes) {
+                //                     value.is_open = true;
+                //                 } else {
+                //                     value.is_open = false;
+                //                 }
+                //                 hours.push(value);
+                //             }         
+                //         });
+                //         return hours;
+                //     }
+                // },
                 
             },
             methods : {
