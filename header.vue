@@ -205,6 +205,7 @@
                     }
                 },
                 todaysHours() {
+                    console.log("this.getTodayHours", this.getTodayHours)
                     return this.getTodayHours;
                     
                     // var timezone = this.timezone
