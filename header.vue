@@ -267,6 +267,25 @@
                 },
             },
             methods: {
+                googleTranslateInit: function() {
+
+            let checkIfGoogleLoaded = setInterval(() => {
+
+                if (google.translate.TranslateElement != null) {
+                    clearInterval(checkIfGoogleLoaded);
+
+                    this.googleTranslateElement('google_translate_element');
+                }
+
+            }, 100);
+
+        },
+
+        googleTranslateElement: function(id) {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, id);
+        }
+
+
                 loadData: async function() {
                     try {
                         let results = await Promise.all([this.$store.dispatch("getData", "stores"), this.$store.dispatch("getData", "events"),this.$store.dispatch("getData", "promotions"),this.$store.dispatch("getData", "jobs")]);
