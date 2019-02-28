@@ -208,7 +208,7 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                         iconClass: "fa fa-google-plus google"
                     },
                     {
-                        name: "Google+",
+                        name: "Instagram",
                         url: "https://www.instagram.com/solandmall/",
                         iconClass: "fa fa-google-plus google"
                     }
