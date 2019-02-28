@@ -207,6 +207,11 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                         url: "https://plus.google.com/+Mysouthlandmall",
                         iconClass: "fa fa-google-plus google"
                     },
+                    {
+                        name: "Google+",
+                        url: "https://www.instagram.com/solandmall/",
+                        iconClass: "fa fa-google-plus google"
+                    }
                     
                 ],
                 search_result : null,
