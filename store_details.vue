@@ -142,8 +142,10 @@
                 ]),
                 pageCategory() {
                     var pageCategory = this.currentStore.categories[1];
-                    category = this.findCategoryById(pageCategory)
-                    return category.name
+                    if (pageCategory) {
+                        category = this.findCategoryById(pageCategory)
+                        return category.name
+                    }
                 },
                 storeCategory() {
                     var currentStoreCategory = this.currentStore.categories[0];
@@ -154,7 +156,10 @@
             methods: {
                 loadData: async function() {
                     try {
-                        let results = await Promise.all([this.$store.dispatch("getData", "repos"), this.$store.dispatch("getData", "categories")]);
+                        let results = await Promise.all([
+                            this.$store.dispatch("getData", "repos"), 
+                            this.$store.dispatch("getData", "categories")
+                        ]);
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
