@@ -1858,7 +1858,7 @@ footer {
     }
 }
 .v-select .spinner {
-    font-size: 2rem;
+    font-size: 2rem !important;
 }
 .v-select.category-select {
     border: 2px solid $primary;
