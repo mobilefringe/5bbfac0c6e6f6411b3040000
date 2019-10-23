@@ -521,11 +521,6 @@ ul.options-list li.highlighted {
 #primary_nav ul ul a {
     padding: 10px 15px
 }
-// #primary_nav ul .menu_item:hover > ul {
-//     opacity: 1;
-//     transform: translateX(-50%) translateY(0);
-// }
-
 
 #primary_nav ul .menu_item {
     &:hover > .subdropdown,
