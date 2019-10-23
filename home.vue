@@ -69,30 +69,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div v-masonry transition-duration="0.3s" item-selector=".grid-item" class="visible_phone">-->
-                    <!--    <div v-masonry-tile class="item">-->
-                    <!--        <div v-for="feature in feature_items" :class="'grid-item ' + feature.masonry_class ">-->
-                    <!--    	    <div v-if="feature.name && feature.description" class="feature_item_container">-->
-                    <!--    	        <a :href="feature.url">-->
-                    <!--        			<img :src="feature.image_url" :alt="feature.name">-->
-                    <!--        			<div class="feature_item_info" >-->
-                    <!--        				<div class="feature_item_content">-->
-                    <!--        					<p>{{ feature.name }}</p>-->
-                    <!--        					<h3>{{ feature.description }}</h3>-->
-                    <!--        					<div class="feature_item_more" :aria-label="feature.name">View Details</div>-->
-                    <!--        				</div>-->
-                    <!--        			</div>-->
-                    <!--        		</a>-->
-                    <!--    	    </div>-->
-                    <!--    	    <div v-else class="feature_item_container">-->
-                    <!--    	        <a :href="feature.url">-->
-                    <!--        			<img :src="feature.image_url" :alt="feature.name">-->
-                    <!--        			<div class="feature_item_info"></div>-->
-                    <!--        		</a>-->
-                    <!--    	    </div>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
                     <div class="home_page_title_container">
         		        <h5 class="home_page_subtitle center caps">Programs</h5>
         		        <h3 class="home_page_title second caps">Kids Club & Southland Scoop</h3>
