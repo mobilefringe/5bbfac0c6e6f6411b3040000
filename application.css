@@ -700,6 +700,7 @@ footer {
     }
     .slick-active button {
         background-color: $primary;
+        color: white;
         opacity: 1;
     }
     li {
