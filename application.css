@@ -1857,6 +1857,9 @@ footer {
         }
     }
 }
+.v-select .spinner {
+    font-size: 2rem;
+}
 .v-select.category-select {
     border: 2px solid $primary;
     height: 60px;
