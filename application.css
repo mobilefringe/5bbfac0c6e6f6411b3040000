@@ -696,11 +696,11 @@ footer {
         font-size: 0;
         padding: 0;
         margin: 0;
-        color: black;
+        color: #000;
     }
     .slick-active button {
         background-color: $primary;
-        color: white;
+        color: #fff;
         opacity: 1;
     }
     li {
