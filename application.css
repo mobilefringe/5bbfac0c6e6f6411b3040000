@@ -521,10 +521,28 @@ ul.options-list li.highlighted {
 #primary_nav ul ul a {
     padding: 10px 15px
 }
-#primary_nav ul .menu_item:hover > ul {
+// #primary_nav ul .menu_item:hover > ul {
+//     opacity: 1;
+//     transform: translateX(-50%) translateY(0);
+// }
+
+
+#primary_nav ul .menu_item {
+    &:hover > .subdropdown,
+    &:focus > .subdropdown,
+    .subdropdown:hover,
+    .subdropdown.focus {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+//for non-IE to allow tabable display on dropdown menu
+#primary_nav ul .menu_item:focus-within > .subdropdown {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
 }
+
 .social_icons {
     a:hover {
         text-decoration: none;
