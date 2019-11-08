@@ -2012,13 +2012,14 @@ footer {
         position: absolute;
         top: 20px;
         right: 0px;
-        height: 21px;
+        // height: 21px;
         z-index: 1;
         background-color: $primary;
         .store_tag_text {
             padding: 4px 0;
             width: 108px;
-            font-size: 0.65rem;
+            // font-size: 0.65rem;
+            font-size: 0.85rem;
             color: #FFF;
             line-height: normal;
             letter-spacing: 0.6px;
