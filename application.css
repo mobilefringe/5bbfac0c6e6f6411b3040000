@@ -2078,8 +2078,10 @@ footer {
             letter-spacing: 0.6px;
             text-transform: uppercase;
             text-align: center;
-            h4, p {
+            p {
                 margin: 0;
+                font-size: 1.125rem;
+                line-height: 1.875rem;
                 color: #FFF;
             }
         }
