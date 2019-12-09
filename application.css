@@ -2042,6 +2042,11 @@ footer {
         display: none;
         background-color: $transparent;
         transition: all 0.3s ease;
+        .store_text p {
+            margin: 0;
+            font-size: 1.125rem;
+            line-height: 1.875rem;
+        }
     }
 }
 .store_logo_container:hover {
