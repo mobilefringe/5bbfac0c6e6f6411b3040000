@@ -95,7 +95,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue!vue-slick", "js-cookie", "masonry", "vue-masonry-plugin", "vue!mapplic-map", "moment", "moment-timezone"], function(Vue, Vuex, slick, Cookies, masonry, VueMasonryPlugin, MapplicComponent, moment, tz) {
+    define(["Vue", "vuex", "vue-meta", "vue!vue-slick", "js-cookie", "masonry", "vue-masonry-plugin", "vue!mapplic-map", "moment", "moment-timezone"], function(Vue, Vuex, meta, slick, Cookies, masonry, VueMasonryPlugin, MapplicComponent, moment, tz) {
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
@@ -103,6 +103,12 @@
             data: function() {
                 return {
                     dataLoaded: false,
+                    meta: {
+                        meta_title: "",
+                        meta_description: "",
+                        meta_keywords: "",
+                        meta_image: ""
+                    },
                     show_popup: false,
                     popup: null,
                     slickOptions: {
