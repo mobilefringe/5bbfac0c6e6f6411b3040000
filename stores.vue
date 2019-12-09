@@ -33,17 +33,17 @@
                         <transition-group name="custom-classes-transition" enter-active-class="animated fadeInUp" leave-active-class="animated fadeOut" tag="div">
                             <div v-masonry-tile  v-for="(store, index) in allStores" :key="index" class="stores-grid-item">
                         	    <div class="store_logo_container">
-                        	        <router-link :to="'/stores/'+ store.slug" :aria-label="'Visit the details page for ' + store.name">
+                        	        <router-link :to="'/stores/'+ store.slug">
                             			<div v-if="!store.no_store_logo">
                             			    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="">
-                            			    <img class="store_img" :src="store.store_front_url_abs" alt="">
+                            			    <img  class="store_img" :src="store.store_front_url_abs" alt="">
                             			</div>
                             			
                                         <div v-else class="no_logo_container">
                                             <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="">
                                             <div class="no_logo_text">
                                                 <div class="store_text">
-                                                    <p>{{ store.name }}</p>
+                                                    <h5>{{ store.name }}</h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -58,7 +58,7 @@
         								</div>
         								<div class="store_details">
         								    <div class="store_text">
-        								        <p>{{ store.name }}</p>
+        								        <h5>{{ store.name }}</h5>
     								        </div>    
         								</div>
                             		</router-link>
