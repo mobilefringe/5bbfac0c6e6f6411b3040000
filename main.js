@@ -270,8 +270,13 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
                     await this.$store.dispatch('initializeApi', { site: "southland", version: "v4" });
                     await Promise.all([this.$store.dispatch("getData", "property")]);
                     this.property.mm_host = this.property.mm_host.replace("http:", "");
-                    let results = await Promise.all([this.$store.dispatch("INITIALIZE_LOCALE"), this.$store.dispatch("getData", "hours"), this.$store.dispatch("getData", "stores"), this.$store.dispatch("getData", "categories")]);
-                    // await Promise.all([this.$store.dispatch("LOAD_META_DATA")]);
+                    let results = await Promise.all([
+                        this.$store.dispatch("INITIALIZE_LOCALE"), 
+                        this.$store.dispatch("getData", "hours"), 
+                        this.$store.dispatch("getData", "stores"), 
+                        this.$store.dispatch("getData", "categories")
+                    ]);
+                    await Promise.all([this.$store.dispatch("LOAD_META_DATA_NEW")]);
                     return results;
                 } catch (e) {
                     console.log("Error loading data: " + e.message);
