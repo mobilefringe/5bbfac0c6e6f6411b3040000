@@ -95,7 +95,7 @@
 </template>
 
 <script>
-    define(["Vue", "vuex", "vue-meta", "vue!vue-slick", "js-cookie", "masonry", "vue-masonry-plugin", "vue!mapplic-map", "moment", "moment-timezone"], function(Vue, Vuex, meta, slick, Cookies, masonry, VueMasonryPlugin, MapplicComponent, moment, tz) {
+    define(["Vue", "vuex", "vue-meta", "vue!vue-slick", "js-cookie", "masonry", "vue-masonry-plugin", "vue!mapplic-map", "moment", "moment-timezone"], function(Vue, Vuex, Meta, slick, Cookies, masonry, VueMasonryPlugin, MapplicComponent, moment, tz) {
         Vue.use(VueMasonryPlugin.default);
         return Vue.component("home-component", {
             template: template, // the variable template will be injected
