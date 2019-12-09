@@ -2126,7 +2126,7 @@ footer {
                 margin: 0;
                 font-size: 1.125rem;
                 line-height: 1.875rem;
-                color: #FFF;
+                color: $primary;
             }
         }
     }
