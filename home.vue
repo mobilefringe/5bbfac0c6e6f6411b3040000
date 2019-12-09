@@ -130,6 +130,8 @@
                 this.loadData().then(response => {
                     // this.popup = this.$store.state.popups[0];
                     
+                    this.meta = this.findMetaDataByPath(this.$route.path);
+                    
                     this.dataLoaded = true;
                 });
             },
@@ -151,6 +153,7 @@
                 ...Vuex.mapGetters([
                     'property',
                     'timezone',
+                    'findMetaDataByPath',
                     'getPropertyHours',
                     'getPropertyHolidayHours',
                     'processedStores'
