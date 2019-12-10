@@ -58,7 +58,7 @@
         								</div>
         								<div class="store_details">
         								    <div class="store_text">
-        								        <h5>{{ store.name }}</h5>
+        								        <p>{{ store.name }}</p>
     								        </div>    
         								</div>
                             		</router-link>
