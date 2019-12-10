@@ -54,7 +54,7 @@
 			<div class="row">
 			    <div class="col-md-2 hidden_phone"></div>
 				<div class="col-sm-12 col-md-8">
-					<nav id="primary_nav" class="hidden_phone">
+					<nav id="primary_nav" class="hidden_phone" role="navigation" aria-label="Main">
 						<ul>
 						    <li class="menu_item" v-for="item in menu_items" :id="item.id">
 						        <router-link v-if="item.sub_menu == undefined" :to="item.href">{{$t(item.name)}}</router-link>
@@ -70,7 +70,7 @@
 				</div>
 				<div class="nav_container visible_phone">
 				    <transition name="custom-classes-transition" enter-active-class="animated slideInRight" leave-active-class="animated slideOutRight">
-					    <nav id="mobile_nav" v-show="showMenu" class="">
+					    <nav id="mobile_nav" v-show="showMenu" class="" role="navigation" aria-label="Mobile">
 					        <hr class="menu_top_line">
 					        <ul>
 					            <li v-for="(item,key) in menu_items" class="menu_item">
