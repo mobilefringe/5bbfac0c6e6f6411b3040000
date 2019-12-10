@@ -13,7 +13,7 @@
         		<div class="site_container page_content">
         			<div class="stores_header_container">
         				<div class="stores_button_container search position_relative">
-        					<search-component :list="allStores" :placeholder="$t('stores_page.find_your_store')" suggestion-attribute="name" v-model="search_result" @select="onOptionSelect" class="text-left">
+        					<search-component :list="allStores" :placeholder="$t('stores_page.find_your_store')" suggestion-attribute="name" v-model="search_result" @select="onOptionSelect" class="text-left" inputID="storeSearch">
         						<template slot="item" scope="option" class="manual">
         							<article class="media">
         								<p>{{ option.data.name }}</p>
