@@ -3,17 +3,17 @@
         <loader v-if="!dataLoaded"></loader>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-        		<div class="page_header" v-if="pageBanner" v-bind:style="{ background: '#000 url(' + pageBanner.image_url + ')' }">
+        		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
         			<div class="site_container">
         				<div class="header_content caps">
-        					<h1>{{ $t("stores_page.play") }}</h1>
+        					<h1>{{ $t("stores_page.directory") }}</h1>
         				</div>
         			</div>
         		</div>
         		<div class="site_container page_content">
         			<div class="stores_header_container">
         				<div class="stores_button_container search position_relative">
-        					<search-component :list="allStores" :placeholder="$t('stores_page.find_your_store')" suggestion-attribute="name" v-model="search_result" @select="onOptionSelect" class="text-left">
+        					<search-component :list="allStores" :placeholder="$t('stores_page.find_your_store')" suggestion-attribute="name" v-model="search_result" @select="onOptionSelect" class="text-left" inputID="storeSearch">
         						<template slot="item" scope="option" class="manual">
         							<article class="media">
         								<p>{{ option.data.name }}</p>
@@ -25,16 +25,17 @@
         				<router-link to="/map">
         				    <div class="stores_button_container map_link">
         				        {{ $t("stores_page.view_map") }}
+        				    
         				    </div>
         				</router-link>
         			</div>
-        			<div v-masonry transition-duration="0.3s" item-selector=".stores-grid-item" horizontal-order="true">
-                        <transition-group name="custom-classes-transition" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" tag="div">
+        			<div v-masonry transition-duration="0.5s" item-selector=".stores-grid-item" horizontal-order="true">
+                        <transition-group name="custom-classes-transition" enter-active-class="animated fadeInUp" leave-active-class="animated fadeOut" tag="div">
                             <div v-masonry-tile  v-for="(store, index) in allStores" :key="index" class="stores-grid-item">
                         	    <div class="store_logo_container">
-                        	        <router-link :to="'/stores/'+ store.slug">
+                        	        <router-link :to="'/stores/'+ store.slug" :aria-label="'Visit details page for ' + store.name">
                             			<div v-if="!store.no_store_logo">
-                            			    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png"  alt="">
+                            			    <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="">
                             			    <img  class="store_img" :src="store.store_front_url_abs" alt="">
                             			</div>
                             			
@@ -42,7 +43,7 @@
                                             <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1536094421888/default_background.png" alt="">
                                             <div class="no_logo_text">
                                                 <div class="store_text">
-                                                    <h5>{{ store.name }}</h5>
+                                                    <p>{{ store.name }}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -57,7 +58,7 @@
         								</div>
         								<div class="store_details">
         								    <div class="store_text">
-        								        <h5>{{ store.name }}</h5>
+        								        <p>{{ store.name }}</p>
     								        </div>    
         								</div>
                             		</router-link>
