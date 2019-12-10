@@ -948,7 +948,7 @@ footer {
 	@include background();
 	 position: relative;
     // height: 300px;
-    // background-color: #999;
+    background-color: $primary;
     // background-position: center center;
     // background-repeat: no-repeat;
     // background-size: cover;
