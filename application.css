@@ -481,7 +481,7 @@ ul.options-list li.highlighted {
     opacity: 0;
     transition: opacity .5s ease .1s, transform .5s ease .1s;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,0.34);
-
+    display: none;
 }
 #primary_nav ul .menu_item ul .dropdown_item {
     padding: 5px 0;
@@ -529,6 +529,8 @@ ul.options-list li.highlighted {
     .subdropdown.focus {
         opacity: 1;
         transform: translateX(-50%) translateY(0);
+        display: block;
+        z-index: 99;
     }
 }
 
