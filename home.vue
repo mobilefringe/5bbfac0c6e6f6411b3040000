@@ -17,6 +17,7 @@
         				</slick>
         			</div>
         		</div>
+        		<main>
         		<div class="site_container">
         		    <div class="visible_phone">
         		        <div class="hours_container home_hours margin_top_30">
@@ -89,6 +90,7 @@
         		        </div>
         		    </div>
         		</div>
+        		</main>
         	</div>
         </transition>    		
 	</div>
