@@ -6,7 +6,7 @@
         		<div class="banner_div">
         			<div class="home_banner_container">
         				<slick ref="slick" :options="slickOptions">
-        					<div class="" v-for="banner in banners" v-if="banners">
+        					<div class="" v-for="banner in banners" v-if="banners" tabindex="-1">
         						<div class="home_banner" v-bind:style="{ background: '#000 url(' + banner.image_url + ')' }">
         						    <div class="home_banner_content" v-if="banner.name && banner.description">
         						        <h1>{{ banner.name }}</h1>
