@@ -51,12 +51,12 @@
                                         </div>
                                         <div class="position_relative" :class="{'has-error': errors.has('email')}">
                                             <label class="label" for="email">Email</label>
-                                            <input id="email" v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" :placeholder="$t('contact_page.form_email')" data-vv-delay="500">
+                                            <input id="email" v-model="form_data.email" v-validate="'required|email'" class="form-control" :class="{'input': true}" name="email" type="email" :placeholder="$t('contact_page.form_email')" data-vv-delay="500" aria-label="email">
                                             <span v-show="errors.has('email')" class="form-control-feedback">{{ errors.first('email') }}</span>
                                         </div>
                                         <div class="position_relative" :class="{'has-error': errors.has('phone')}">
                                             <label class="label" for="phone">Phone Number</label>
-                                            <input id="phone" v-model="form_data.phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="phone" type="text" :placeholder="$t('contact_page.form_phone')" data-vv-delay="1000">
+                                            <input id="phone" v-model="form_data.phone" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="phone" type="text" :placeholder="$t('contact_page.form_phone')" data-vv-delay="1000" aria-label="phone">
                                             <span v-show="errors.has('phone')" class="form-control-feedback">{{ errors.first('phone') }}</span>
                                         </div>
                                     </div>
