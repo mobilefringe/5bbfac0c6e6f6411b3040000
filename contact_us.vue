@@ -13,7 +13,10 @@
         		<div class="site_container">
                     <div class="contact_container">
 					    <div class="contact_map">
-					        <iframe title="Map" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'https://maps.google.nl/maps?q=' + getPropertyAddress + '&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear=' + getPropertyAddress + '&amp;z=16&amp;output=embed'"></iframe>
+					    <p class="visuallyhidden">
+            <a :href="'https://maps.google.com/?q=' + property.name">View {{ property.name }} on Google Maps</a>.
+                        </p>
+					        <iframe title="Map" aria-hidden="true" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  :src="'https://maps.google.nl/maps?q=' + getPropertyAddress + '&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear=' + getPropertyAddress + '&amp;z=16&amp;output=embed'"></iframe>
 					    </div>
 					    <div class="contact_content">
 					        <span v-if="property.address1 && property.city && property.province_state && property.postal_code">
