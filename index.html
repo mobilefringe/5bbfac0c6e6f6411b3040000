@@ -36,9 +36,7 @@
 	<body>
 		<div id="app" v-cloak>
 			<loader v-if="!dataLoaded"></loader>
-			<div role="complementary">
 			<header-component :menu_items="menu_items" :social_media="social_media" v-if="dataLoaded"></header-component>
-			</div>
 			<div class="main_content_container" v-if="dataLoaded">
 			<main>
 				<transition name="custom-classes-transition" enter-active-class="fadeIn">
