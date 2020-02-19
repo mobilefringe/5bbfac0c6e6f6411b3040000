@@ -594,6 +594,7 @@ footer {
                 padding: 0 24px;
                 display: inline-block;
                 font-size: 0.875rem;
+                background-color: #000;
                 a {
                     color: #FFF;
                     background-color: #000;
