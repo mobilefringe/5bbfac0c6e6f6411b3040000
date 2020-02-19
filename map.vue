@@ -30,7 +30,7 @@
                         </div>
                         <div class="margin-30 visible-mobile"></div>
                         <div class="hidden_phone col-md-3 col-md-pull-9">
-                            <div class="store_list_container hidden-mobile">
+                            <div class="store_list_container hidden-mobile" tabindex=0>
                                 <div class="store_name" v-for="store in allStores">
                                     <p v-on:click="dropPin(store)">{{store.name}}</p>
                                 </div>
