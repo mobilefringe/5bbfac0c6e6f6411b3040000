@@ -63,7 +63,7 @@
                                     <div class="col-sm-12 col-md-6">
                                         <div class="position_relative" :class="{'has-error': errors.has('message')}">
                                             <label class="label" for="message">Message*</label>
-                                            <textarea id="message" v-model="form_data.message" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="message" type="text" :placeholder="$t('contact_page.form_message')" data-vv-delay="500"></textarea>
+                                            <textarea id="message" v-model="form_data.message" v-validate="'required:true'" class="form-control" :class="{'input': true}" name="message" type="text" :placeholder="$t('contact_page.form_message')" data-vv-delay="500"   aria-label="message"></textarea>
                                             <span v-show="errors.has('message')" class="form-control-feedback">{{ errors.first('message') }}</span>
                                         </div>
                                         <div class="pull-right">
