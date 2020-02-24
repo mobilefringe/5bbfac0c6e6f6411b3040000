@@ -27,7 +27,7 @@
                         </div>
         		        <div class="home_page_title_container">
             		        <div class="home_page_subtitle center caps h5">Discover {{ property.name }}</div>
-            		        <h3 class="home_page_title caps">Find Your Store</h3>
+            		        <div class="home_page_title caps h3">Find Your Store</div>
             		    </div>
             		    <div class="margin_30">
                             <div class="map_search_container">
