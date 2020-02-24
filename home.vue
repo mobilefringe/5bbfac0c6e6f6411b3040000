@@ -42,7 +42,7 @@
                         <mapplic-map ref="mapplic_ref" :height="556" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>
         		    </div>
         		    <div class="home_page_title_container">
-        		        <h5 class="home_page_subtitle center caps">Discover {{ property.name }}</h5>
+        		        <div class="home_page_subtitle center caps h5">Discover {{ property.name }}</div>
         		        <h3 class="home_page_title caps">What's Happening</h3>
         		    </div>
         		    <div v-masonry transition-duration="0.3s" item-selector=".grid-item" > <!-- class="hidden_phone" -->
