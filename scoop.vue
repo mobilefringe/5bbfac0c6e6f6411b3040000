@@ -27,7 +27,7 @@
         			</div>
         			<div v-if="pageHeader" class="row">
         			    <div class="col-md-12">
-        			        <h4 class="margin_40 center bold" v-html="pageHeader.body"></h4>
+        			        <div class="margin_40 center bold h4" v-html="pageHeader.body"></div>
         			    </div>
         			</div>
         			<div class="row">
