@@ -41,7 +41,7 @@ require.config({
         'bootstrap-vue' : 'https://codecloud.cdn.speedyrails.net/sites/59347e776e6f64538f150000/text/javascript/1554736414383/bootstrap-vue',
         'campaignMonitor': 'https://js.createsend1.com/javascript/copypastesubscribeformlogic',
         ///google translate
-        "google-translate" : "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
+        // "google-translate" : "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
         // Dependencies for Map //
         'mousewheel' : 'https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min',
         'mapplic' : 'https://preview-mmvue.codecloudapp.com/mapplic',
