@@ -11,6 +11,9 @@
         			</div>
         		</div>
         		<div class="site_container">
+        		<div class="visuallyhidden">
+        		    <h2>Contact Us</h2>
+        		</div>
                     <div class="contact_container">
 					    <div class="contact_map">
 					    <p class="visuallyhidden">
