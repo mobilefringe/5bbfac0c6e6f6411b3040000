@@ -13,7 +13,7 @@
                 <div class="site_container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 class="bold">Exterior retailer's hours may differ from The {{property.name}}'s regular shopping hours.</h4>
+                            <div class="bold h4">Exterior retailer's hours may differ from The {{property.name}}'s regular shopping hours.</div>
                         </div>
                     </div>
                     <div class="row hours_row">
