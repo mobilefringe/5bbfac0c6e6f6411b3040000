@@ -32,12 +32,6 @@
         			</div>
         			<div class="row">
         			    <div class="col-md-8">
-        			    <div class="visuallyhidden">
-        			        <h2>Kids Club Page content</h2>
-        			    </div>
-        			    <div class="visuallyhidden">
-        			        <h3>Kids Club Page content</h3>
-        			    </div>
         			        <div class="" v-html="pageBody.body"></div>
         			    </div>
         			   <div class="col-md-4">
