@@ -41,7 +41,7 @@
 				</div>
 				<div class="hidden_phone">
 				    <div class="header_search_container">
-					    <search-component v-if="headerReady" :list="searchList" placeholder="Search" :suggestion-attribute="suggestionAttribute" :keys="keys" v-model="search_result" @select="onOptionSelect" :autocomplete="false" :minMatchCharLength="3" :tokenize="true" class="text-left" inputID="fullSiteSearch">
+					    <search-component v-if="headerReady" :list="searchList" placeholder="Search" :suggestion-attribute="suggestionAttribute" :keys="keys" v-model="search_result" @select="onOptionSelect" :autocomplete="false" :minMatchCharLength="3" :tokenize="true" class="text-left" inputID="fullSiteSearch" :inputID="searchAll">
                             <template slot="item" scope="option" class="manual">
                                 <article class="media">
                                     <p>{{ option.data.name }}</p>
