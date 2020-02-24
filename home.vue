@@ -20,7 +20,7 @@
         		<div class="site_container">
         		    <div class="visible_phone">
         		        <div class="hours_container home_hours margin_top_30">
-                            <h5 class="center caps" v-if="hour.is_open" v-for="hour in todaysHours">{{ property.name }} is open today:</h5>
+                            <div class="center caps h5" v-if="hour.is_open" v-for="hour in todaysHours">{{ property.name }} is open today:</div>
         		            <h5 class="center caps" v-else>{{ property.name }} is</h5>
                             <h3 class="center caps" v-if="hour.is_open" v-for="hour in todaysHours">{{hour.open_time | moment("h a", timezone)}} - {{hour.close_time | moment("h a", timezone)}}</h3>
                             <h3 class="center caps" v-else>Closed</h3>
