@@ -53,7 +53,7 @@
                         			<div class="feature_item_info" >
                         				<div class="feature_item_content">
                         					<!--<p v-if="feature.description">{{ feature.name }}</p>-->
-                        					<h3>{{ feature.name }}</h3>
+                        					<div class="h3">{{ feature.name }}</div>
                         					<a class="feature_item_link" :href="feature.url">
                         					    <div class="feature_item_more animated_btn" :aria-label="feature.name">View Details</div>
                         					</a>
