@@ -22,8 +22,8 @@
         		        <div class="hours_container home_hours margin_top_30">
                             <div class="center caps h5" v-if="hour.is_open" v-for="hour in todaysHours">{{ property.name }} is open today:</div>
         		            <div class="center caps h5" v-else>{{ property.name }} is</div>
-                            <h3 class="center caps" v-if="hour.is_open" v-for="hour in todaysHours">{{hour.open_time | moment("h a", timezone)}} - {{hour.close_time | moment("h a", timezone)}}</h3>
-                            <h3 class="center caps" v-else>Closed</h3>
+                            <div class="center caps h3" v-if="hour.is_open" v-for="hour in todaysHours">{{hour.open_time | moment("h a", timezone)}} - {{hour.close_time | moment("h a", timezone)}}</div>
+                            <div class="center caps h3" v-else>Closed</div>
                         </div>
         		        <div class="home_page_title_container">
             		        <div class="home_page_subtitle center caps h5">Discover {{ property.name }}</div>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="home_page_title_container">
         		        <div class="home_page_subtitle center caps h5">Programs</div>
-        		        <h3 class="home_page_title second caps">Kids Club & Southland Scoop</h3>
+        		        <div class="home_page_title second caps h3">Kids Club & Southland Scoop</div>
         		    </div>
         		    <div class="row">
         		        <div v-for="feature in programs" class="col-sm-6">
@@ -79,7 +79,7 @@
                     			<div class="feature_item_info">
                     				<div class="feature_item_content">
                     					<p>{{ feature.name }}</p>
-                    					<h3>{{ feature.description }}</h3>
+                    					<div class"h3">{{ feature.description }}</div>
                     					<a :href="feature.url" :aria-label="feature.name">
                         					<div class="feature_item_more animated_btn">View Details</div>
                         				</a>
