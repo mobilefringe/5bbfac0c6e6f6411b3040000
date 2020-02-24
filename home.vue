@@ -70,7 +70,7 @@
                         </div>
                     </div>
                     <div class="home_page_title_container">
-        		        <h5 class="home_page_subtitle center caps">Programs</h5>
+        		        <div class="home_page_subtitle center caps h5">Programs</div>
         		        <h3 class="home_page_title second caps">Kids Club & Southland Scoop</h3>
         		    </div>
         		    <div class="row">
