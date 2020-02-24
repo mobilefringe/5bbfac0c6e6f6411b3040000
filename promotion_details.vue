@@ -6,7 +6,7 @@
         		<div class="page_header" v-if="pageBanner" v-bind:style="{ background: '#000 url(' + pageBanner.image_url + ')' }">
         			<div class="site_container">
         				<div class="header_content caps">
-        					<h1>{{ $t("promos_page.promos_header") }}</h1>
+        					<h1 class="banner-content">{{ $t("promos_page.promos_header") }}</h1>
         				</div>
         			</div>
         		</div>
@@ -17,15 +17,15 @@
 					    <div class="promo_content">
 					        <p class="promo_title" v-if="currentPromo.store">{{ currentPromo.store.name }}</p>
 					        <p class="promo_title" v-else>{{ property.name }}</p>
-					        <h3 class="center caps hidden_phone" v-if="locale=='en-ca'">{{ currentPromo.name_short }}</h3>
-							<h3 class="center caps hidden_phone" v-else>{{ currentPromo.name_short_2 }}</h3>
+					        <div class="center caps hidden_phone h3" v-if="locale=='en-ca'">{{ currentPromo.name_short }}</div>
+							<div class="center caps hidden_phone h3" v-else>{{ currentPromo.name_short_2 }}</div>
 					    </div>
 					</div>
     				<div class="row">
     				    <div class="col-md-12">
             				<div class="details_store_desc">
-            				    <h4 class="details_store_title" v-if="locale=='en-ca'">{{ currentPromo.name }}</h4>
-							    <h4 class="details_store_title" v-else>{{ currentPromo.name_2 }}</h4>
+            				    <div class="details_store_title h4" v-if="locale=='en-ca'">{{ currentPromo.name }}</div>
+							    <div class="details_store_title h4" v-else>{{ currentPromo.name_2 }}</div>
             				    <p class="bold">
             				        <span v-if="isMultiDay(currentPromo)">{{ currentPromo.start_date | moment("MMM D", timezone)}} - {{ currentPromo.end_date | moment("MMM D", timezone)}}</span>
             				        <span v-else>{{ currentPromo.start_date | moment("MMM D", timezone)}}</span>
