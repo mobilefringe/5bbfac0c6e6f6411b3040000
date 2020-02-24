@@ -37,8 +37,8 @@
 		<div id="app" v-cloak>
 			<loader v-if="!dataLoaded"></loader>
 			<header-component :menu_items="menu_items" :social_media="social_media" v-if="dataLoaded"></header-component>
-			<div class="main_content_container" v-if="dataLoaded">
 			<h1 class="visuallyhidden">Welcome to Southland Mall</h1>
+			<div class="main_content_container" v-if="dataLoaded">
 				<transition name="custom-classes-transition" enter-active-class="fadeIn">
 					<router-view class="content" :locale="locale" role="main"></router-view>
 				</transition>
