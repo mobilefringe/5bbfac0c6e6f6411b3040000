@@ -20,8 +20,8 @@
     					            <span v-if="isMultiDay(promo)">{{ promo.start_date | moment("MMM D", timezone)}} - {{ promo.end_date | moment("MMM D", timezone)}}</span>
     					            <span v-else>{{ promo.start_date | moment("MMM D", timezone)}}</span>
     					        </p>
-    					        <h3 class="center caps" v-if="locale=='en-ca'">{{ promo.name_short }}</h3>
-    							<h3 class="center caps" v-else>{{ promo.name_short_2 }}</h3>
+    					        <div class="center caps h3" v-if="locale=='en-ca'">{{ promo.name_short }}</div>
+    							<div class="center caps h3" v-else>{{ promo.name_short_2 }}</div>
     							<router-link :to="'/events/'+ promo.slug">
     							   <div class="promo_learn_more animated_btn">{{ $t("events_page.read_more") }}</div>
     						    </router-link>
