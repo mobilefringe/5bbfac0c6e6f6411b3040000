@@ -53,7 +53,7 @@
                     </div>
                     <div v-if="holidayHours.length > 0" class="row">
                         <div class="col-sm-12">
-                            <h4 class="margin_30 bold">Holiday Hours</h4>
+                            <div class="margin_30 bold h4">Holiday Hours</div>
                         </div>
                         <div v-for="hour in holidayHours" class="col-sm-6">
                             <div class="row holiday_hours">
