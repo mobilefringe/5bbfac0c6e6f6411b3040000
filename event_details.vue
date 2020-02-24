@@ -17,15 +17,15 @@
 					    <div class="promo_content">
 					        <p class="promo_title" v-if="currentEvent.store">{{ currentEvent.store.name }}</p>
 					        <p class="promo_title" v-else>{{ property.name }}</p>
-					        <h3 class="hidden_phone center caps" v-if="locale=='en-ca'">{{ currentEvent.name_short }}</h3>
-							<h3 class="hidden_phone center caps" v-else>{{ currentEvent.name_short_2 }}</h3>
+					        <div class="hidden_phone center caps h3" v-if="locale=='en-ca'">{{ currentEvent.name_short }}</div>
+							<div class="hidden_phone center caps h3" v-else>{{ currentEvent.name_short_2 }}</div>
 					    </div>
 					</div>
     				<div class="row">
     				    <div class="col-md-12">
             				<div class="details_store_desc">
-            				    <h4 class="details_store_title" v-if="locale=='en-ca'">{{ currentEvent.name }}</h4>
-							    <h4 class="details_store_title" v-else>{{ currentEvent.name_2 }}</h4>
+            				    <div class="details_store_title h4" v-if="locale=='en-ca'">{{ currentEvent.name }}</div>
+							    <div class="details_store_title h4" v-else>{{ currentEvent.name_2 }}</div>
             				    <p class="bold">
             				        <span v-if="isMultiDay(currentEvent)">{{ currentEvent.start_date | moment("MMM D", timezone)}} - {{ currentEvent.end_date | moment("MMM D", timezone)}}</span>
             				        <span v-else>{{ currentEvent.start_date | moment("MMM D", timezone)}}</span>
