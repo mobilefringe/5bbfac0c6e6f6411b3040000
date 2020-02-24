@@ -11,6 +11,12 @@
         			</div>
         		</div>
         		<div class="site_container">
+        		<div class="visuallyhidden">
+        			        <h2>Kids Club Page content</h2>
+        			    </div>
+        			    <div class="visuallyhidden">
+        			        <h3>Kids Club Page content</h3>
+        			    </div>
                     <div class="program_header_container information hidden_phone">
         				<div class="program_button_container animated_btn" v-for="item in pages" @click="selectContent(item)" :class="{ active: item.isActive, last: item.isLast }">
 
