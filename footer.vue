@@ -11,7 +11,7 @@
 		            <nav id="footer_nav">
 						<ul>
 						    <li v-for="item in footer_menu_items" class="menu_item">
-						        <router-link :to="item.href">{{$t(item.name)}}</router-link>
+						        <router-link :to="item.href"><p>{{$t(item.name)}}</p></router-link>
 						    </li>
 						</ul>
 					</nav>    
