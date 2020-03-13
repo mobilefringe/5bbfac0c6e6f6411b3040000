@@ -18,7 +18,7 @@
                 <div class="site_container mobile_padding margin_30">
                     <div class="">
                         <div class="details_col_12">
-                            <h1>{{currentPage.title}} </h1>
+                            <!--<h1>{{currentPage.title}} </h1>-->
                             <div class="page_body" v-html="currentPage.body"></div>
                         </div>
                     </div>
