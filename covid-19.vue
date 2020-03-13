@@ -4,11 +4,11 @@
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
                 <div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-        			<div class="site_container">
-        				<div class="header_content caps">
-        					<h1>{{currentPage.title}}<br/>Coronavirus information & Resources</h1>
-        				</div>
-        			</div>
+        			<!--<div class="site_container">-->
+        			<!--	<div class="header_content caps">-->
+        			<!--		<h1>{{currentPage.title}}<br/>Coronavirus information & Resources</h1>-->
+        			<!--	</div>-->
+        			<!--</div>-->
         		</div>
                 <!--<div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">-->
                 <!--    <div class="site_container center_text">-->
