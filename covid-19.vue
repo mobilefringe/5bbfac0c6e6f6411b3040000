@@ -139,10 +139,8 @@
     /*    margin-left: 5px;*/
     /*}*/
     
-    .page_body p,
-    h3,
-    ul{
-        margin-bottom: 30px;
+    .page_body p, h3, ul{
+        margin-bottom: 1rem;
     }
     .page_body h2 {
         padding: unset;
