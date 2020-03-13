@@ -3,9 +3,6 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <!--<div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">-->
-                    
-                <!--</div>-->
                 <div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
                     <div class="site_container center_text">
                         <div class="page_container">
@@ -14,11 +11,9 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="site_container mobile_padding margin_30">
                     <div class="">
                         <div class="details_col_12">
-                            <!--<h1>{{currentPage.title}} </h1>-->
                             <div class="page_body" v-html="currentPage.body"></div>
                         </div>
                     </div>
