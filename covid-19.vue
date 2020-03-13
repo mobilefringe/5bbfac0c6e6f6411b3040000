@@ -105,6 +105,7 @@
         font-size: 26px;
         margin-bottom: 30px;
         text-transform: uppercase;
+        font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;;
         
     }
     
