@@ -7,7 +7,7 @@
                     
                 <!--</div>-->
                 <div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-                    <div class="center_text">
+                    <div class="site_container center_text">
                         <div class="page_container">
                             <h1><span>{{currentPage.title}} </span>Coronavirus information & Resources</h1>
                             
