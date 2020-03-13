@@ -99,24 +99,24 @@
         display: flex;
         align-items: center;
     }
-    .covid-background h1 {
-        color: #fff;
-        font-weight: light;
+    /*.covid-background h1 {*/
+    /*    color: #fff;*/
+    /*    font-weight: light;*/
         
        
-    }
-    .covid-background span {
-        display: block;
-        margin-bottom: 24px;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    h1 {
-        font-size: 26px;
-        margin-bottom: 30px;
-        text-transform: uppercase;
+    /*}*/
+    /*.covid-background span {*/
+    /*    display: block;*/
+    /*    margin-bottom: 24px;*/
+    /*    font-size: 28px;*/
+    /*    font-weight: bold;*/
+    /*}*/
+    /*h1 {*/
+    /*    font-size: 26px;*/
+    /*    margin-bottom: 30px;*/
+    /*    text-transform: uppercase;*/
         
-    }
+    /*}*/
     
     /*.page_body ul {*/
     /*  list-style-type: none;*/
