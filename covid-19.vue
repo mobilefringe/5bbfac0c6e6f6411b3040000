@@ -93,6 +93,9 @@
 </script>
 
 <style>
+    .page_header .header_content {
+        max-width: unset;
+    }
     .covid-background {
         height: 300px;
         margin-bottom: 60px;
