@@ -128,20 +128,20 @@
         
     }
     
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    ul > li {
-      text-indent: -5px;
-    }
-    ul > li:before {
-      content: "-";
-      text-indent: -5px;
-    }
-    ul > li a {
-        margin-left: 5px;
-    }
+    /*ul {*/
+    /*  list-style-type: none;*/
+    /*  padding-left: 0;*/
+    /*}*/
+    /*ul > li {*/
+    /*  text-indent: -5px;*/
+    /*}*/
+    /*ul > li:before {*/
+    /*  content: "-";*/
+    /*  text-indent: -5px;*/
+    /*}*/
+    /*ul > li a {*/
+    /*    margin-left: 5px;*/
+    /*}*/
     
     .page_body p,
     h3,
@@ -155,15 +155,13 @@
         font-size: 24px;
         margin: 60px 0;
         font-weight: bold;
-        font-family: 'Maven Pro', sans-serif;
+
     }
     h3 {
         font-size: 26px;
         text-transform: uppercase;
     }
-    .covid-page {
-        font-family: 'Maven Pro', sans-serif !important;
-    }
+
     .center_text {
         display: flex;
         align-items: center
