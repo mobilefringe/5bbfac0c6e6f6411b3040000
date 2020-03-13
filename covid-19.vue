@@ -3,14 +3,21 @@
         <loading-spinner v-if="!dataLoaded"></loading-spinner>
         <transition name="fade">
             <div v-if="dataLoaded" v-cloak>
-                <div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
-                    <div class="site_container center_text">
-                        <div class="page_container">
-                            <h1><span>{{currentPage.title}} </span>Coronavirus information & Resources</h1>
+                <div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
+        			<div class="site_container">
+        				<div class="header_content caps">
+        					<h1>{{currentPage.title}}<br/>Coronavirus information & Resources</h1>
+        				</div>
+        			</div>
+        		</div>
+                <!--<div class="inside_header_background covid-background"  v-if="pageBanner" :style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">-->
+                <!--    <div class="site_container center_text">-->
+                <!--        <div class="page_container">-->
+                <!--            <h1><span>{{currentPage.title}} </span>Coronavirus information & Resources</h1>-->
                             
-                        </div>
-                    </div>
-                </div>
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
                 <div class="site_container mobile_padding margin_30">
                     <div class="">
                         <div class="details_col_12">
@@ -65,26 +72,13 @@
                     
                     this.loadData().then(response => {
                         var temp_repo = this.findRepoByName('COVID-19 Banner');
-                        if(temp_repo) {
+                        if (temp_repo && temp_repo.images) {
                             this.pageBanner = temp_repo.images[0];
-                        }
-                        else {
+                        } else {
                             this.pageBanner = {};
                             this.pageBanner.image_url = "";
                         }
                     });
-                    // this.loadData().then(response => {
-                    //     var temp_repo1 = this.findRepoByName('Sales & Events Side Banner');
-                    //     if(temp_repo1 && temp_repo1.images) {
-                    //         this.sideBanner = temp_repo1.images[0];
-                    //     } else {
-                    //         this.sideBanner = {
-                    //             "image_url": ""
-                    //         }
-                    //     } 
-                    // });
-                    
-               
                 },
                 loadData: async function () {
                     try {
