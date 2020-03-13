@@ -128,20 +128,20 @@
         
     }
     
-    /*ul {*/
-    /*  list-style-type: none;*/
-    /*  padding-left: 0;*/
-    /*}*/
-    /*ul > li {*/
-    /*  text-indent: -5px;*/
-    /*}*/
-    /*ul > li:before {*/
-    /*  content: "-";*/
-    /*  text-indent: -5px;*/
-    /*}*/
-    /*ul > li a {*/
-    /*    margin-left: 5px;*/
-    /*}*/
+    .page_body ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .page_body ul > li {
+      text-indent: -5px;
+    }
+    .page_body ul > li:before {
+      content: "-";
+      text-indent: -5px;
+    }
+    .page_body ul > li a {
+        margin-left: 5px;
+    }
     
     .page_body p,
     h3,
