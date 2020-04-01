@@ -313,7 +313,7 @@
                                 var time = moment().tz(timezone).format('HH:mm');
                                 var opens = moment(value.open_time).tz(timezone).format('HH:mm');
                                 var closes = moment(value.close_time).tz(timezone).format('HH:mm');
-                                if (time > opens && time < closes) {
+                                if ((time > opens && time < closes) && !value.is_closed) {
                                     value.is_open = true;
                                 } else {
                                     value.is_open = false;
