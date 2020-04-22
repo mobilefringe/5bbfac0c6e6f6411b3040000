@@ -142,7 +142,7 @@
                         Cookies.set('popup_viewed', "true");
                         viewed = Cookies.get('popup_viewed');
                         this.show_popup = true;
-                        this.popup.image_url = "//mallmaverick.cdn.speedyrails.net" + this.popup.photo_url;
+                        this.popup.image_url = "//assets.mallmaverick.com" + this.popup.photo_url;
                         document.getElementById('popup_backdrop').style.display = "block";
                     } else {
                         document.getElementById('popup_backdrop').style.display = "none";
@@ -247,7 +247,7 @@
                     return all_stores
                 },
                 getSVGMap() {
-                    var mapURL = "https://www.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
+                    var mapURL = "https://assets.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
                     return mapURL
                 },
                 floorList() {
