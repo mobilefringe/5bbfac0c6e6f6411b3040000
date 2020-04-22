@@ -12,7 +12,7 @@
         <div class="site_container">
             <div class="row text-center">
                     <img :src='currentContest.image_url' alt="contest image" class="image"  v-if="locale=='en-ca'">
-                    <img :src="'//mallmaverick.com'+currentContest.photo_2_url" alt="contest image" class="image"  v-else>
+                    <img :src="'//assets.mallmaverick.com'+currentContest.photo_2_url" alt="contest image" class="image"  v-else>
                 </div> 
             <div class="row"> 
                 <div class="col-sm-12 contest_contents">
