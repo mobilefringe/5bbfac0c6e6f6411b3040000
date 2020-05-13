@@ -54,10 +54,6 @@ require.config({
 
 require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vue-i18n", "locales", "jquery", "moment", "moment-timezone", "vue-moment", "vue-head", "vuex-router-sync", "vue-social-sharing", "vue-select", "vue!search-component", "vue-simple-spinner", "vue!loader.vue", "vue!header.vue", "vue!footer.vue"], function (Vue, Vuex, Vue2Filters, VueRouter, appRoutes, store, VueI18n, messages, $, moment, tz, VueMoment, VueHead, VuexRouterSync, SocialSharing, VueSelect, Search, Spinner, Loader, HeaderComponent, FooterComponent) {
 
-    Vue.use(Meta, {
-        keyName: 'metaInfo', // the component option name that vue-meta looks for meta info on.
-        tagIDKeyName: 'vmid' // the property name that vue-meta uses to determine whether to overwrite or append a tag
-    });
     Vue.use(VueRouter);
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
