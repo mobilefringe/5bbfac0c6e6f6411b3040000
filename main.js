@@ -62,6 +62,7 @@ require(["Vue", "vuex", "vue2-filters", "vue_router", "routes", "datastore", "vu
     Vue.use(Vue2Filters);
     Vue.use(VueI18n);
     Vue.use(SocialSharing);
+    Vue.use(VueHead);
     
     /* initialize router */
     const router = new VueRouter({
